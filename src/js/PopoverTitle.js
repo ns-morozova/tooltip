@@ -20,14 +20,12 @@ export default class PopoverTitle {
     }
 
     eventClick(event) {
-        //debugger;
         event.preventDefault();
         this.togglePopover(event.currentTarget);
     }
 
 
     togglePopover(element) {
-        debugger;
         this.popover.classList.toggle('hidden-popover');
         if (this.popover.classList.contains('hidden-popover')) {
             return;
